@@ -1,4 +1,11 @@
 # LAB 2 - GROUP 1 - CRN: 74026
+
+## Contributers 
+
+- Harsh Tamakuwala - 100824220
+- Syed Nasir Hussain Naqvi - 100809447
+- David Hanna - 100828635
+
 ## Introduction
 `myshell` is a simple command-line interpreter that mimics basic Unix shell functionality. This README serves as a guide for users to understand how to operate `myshell` effectively.
 
@@ -43,7 +50,7 @@
 To install `myshell`, follow these steps:
 1. Clone the repository to your local machine.
    ```bash
-   git clone OS-LAB-2
+   git clone OS_LAB2-MyShell
 3. Navigate to the directory containing the source code.
    ```bash
    cd myshell
@@ -63,8 +70,3 @@ To install `myshell`, follow these steps:
 ## Exiting `myshell`
 To exit `myshell`, simply type the `quit` command or press `Ctrl + C`.
 
-## Contributers 
-
-- Harsh Tamakuwala - 100824220
-- Syed Nasir Hussain Naqvi - 100809447
-- David Hanna - 100828635
