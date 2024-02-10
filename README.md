@@ -1,63 +1,57 @@
 # LAB 2 - GROUP 1 - CRN: 74026
 
-## Contributers 
+## Contributors 
 
-- Harsh Tamakuwala - 100824220
-- Syed Nasir Hussain Naqvi - 100809447
-- David Hanna - 100828635
+- Harsh Tamakuwala - ID: 100824220
+- Syed Nasir Hussain Naqvi - ID: 100809447
+- David Hanna - ID: 100828635
 
-## Introduction
-`myshell` is a simple command-line interpreter that mimics basic Unix shell functionality. This README serves as a guide for users to understand how to operate `myshell` effectively.
+## Overview
+`myshell` is a basic command-line interpreter designed to replicate fundamental Unix shell functionalities. This README offers comprehensive guidance for users to effectively navigate and utilize `myshell`.
 
-## Features
-`myshell` supports the following internal commands:
-1. `cd <directory>`: Change the current default directory to `<directory>`. If `<directory>` is not provided, it reports the current directory. An appropriate error is reported if `<directory>` does not exist. This command also updates the `PWD` environment variable.
-2. `clr`: Clear the screen.
-3. `dir <directory>`: List the contents of directory `<directory>`.
-4. `environ`: List all the environment strings.
-5. `echo <comment>`: Display `<comment>` on the display followed by a new line. Multiple spaces/tabs may be reduced to a single space.
-6. `help`: Display the user manual using the more filter.
-7. `pause`: Pause operation of the shell until 'Enter' is pressed.
-8. `quit`: Quit the shell.
+## Key Features
+`myshell` offers several internal commands:
+1. `cd <directory>`: Changes the current default directory to `<directory>`. If `<directory>` is unspecified, the current directory is displayed. An appropriate error message is shown if `<directory>` does not exist. This command also updates the `PWD` environment variable.
+2. `clr`: Clears the screen.
+3. `dir <directory>`: Lists the contents of directory `<directory>`.
+4. `environ`: Displays all environment strings.
+5. `echo <comment>`: Shows `<comment>` on the display followed by a new line. Multiple spaces/tabs are reduced to a single space.
+6. `help`: Exhibits the user manual using the more filter.
+7. `pause`: Halts operation of the shell until 'Enter' is pressed.
+8. `quit`: Exits the shell.
 
-`myshell` supports external command as well using the fork and exec method by following these step :
+`myshell` also supports external commands through the fork and exec method:
 - If the command is recognized as an internal command, it is executed directly.
 - If it's not an internal command, the shell forks a child process.
-- In the child process, we set the parent environment variable using the setenv function.
-- The external command is then executed using execvp.
-- The parent process waits for the child process to finish using wait(NULL)
+- In the child process, the parent environment variable is set using the `setenv` function.
+- The external command is then executed using `execvp`.
+- The parent process waits for the child process to finish using `wait(NULL)`.
 
-  Try these to test out:
-1. `pwd`:  prints the current working directory.
-2. `ls`:  is a basic command that lists the contents of the current directory.
-3. `echo`: is used to print a message.
-4. `date`: prints the current date and time.
+Try these commands to explore:
+1. `pwd`: Displays the current working directory.
+2. `ls`: Lists the contents of the current directory.
+3. `echo`: Prints a message.
+4. `date`: Shows the current date and time.
 
-`myshell` able to take its command line input from a file.
-  
-  Try these to test out:
-- create a simple batch file named batchfile with a few commands. You can modify it or add more commands as needed. Open a text editor and create a file named batchfile. Add the following commands to the file:
-  
-  1. `echo This is a batch file`
-  2. `ls`
-  3. `pwd`
-     
-- Save the file. Now, you can run your shell in batch mode using the following command:
+Additionally, `myshell` is capable of taking command line input from a file. 
 
-   `./myshell batchfile`
+To test this functionality:
+- Create a simple batch file named `batchfile` with desired commands.
+- Run the shell in batch mode using:
+  `./myshell batchfile`
 
 # Installation & Usage
 To install `myshell`, follow these steps:
 1. Clone the repository to your local machine.
    ```bash
    git clone OS_LAB2-MyShell
-3. Navigate to the directory containing the source code.
+2. Navigate to the directory containing the source code.
    ```bash
    cd myshell
-5. Compile the source code using the provided Makefile.
+3. Compile the source code using the provided Makefile.
     ```bash
    make
-7. Run the compiled executable file.
+4. Run the compiled executable file.
    ```bash
    ./myshell
 
@@ -69,4 +63,3 @@ To install `myshell`, follow these steps:
 
 ## Exiting `myshell`
 To exit `myshell`, simply type the `quit` command or press `Ctrl + C`.
-
