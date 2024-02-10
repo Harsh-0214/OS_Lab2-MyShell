@@ -1,11 +1,20 @@
 #ifndef MYSHELL_H
 #define MYSHELL_H
 
-#include <stdio.h> //standard IO Functions
-#include <stdlib.h> //standard library for functions like malloc
-#include <string.h> // string handling functions
-#include <unistd.h> //provides access to the POSIX OS API
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
 
-void change_directory(char *path); //declaration of 'cd' function (cd function prototype)
+//allfunctions from utility.c
+
+void change_directory(char *path);
+void clr();
+void list_directory(char *path);
+void display_environment();
+void display_comment(char *comment);
+void display_help();
+void pause_shell();
 
 #endif
+
