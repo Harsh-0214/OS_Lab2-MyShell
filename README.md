@@ -1,4 +1,4 @@
-#LAB 2 - GROUP 1 - CRN: 74026
+# LAB 2 - GROUP 1 - CRN: 74026
 ## Introduction
 `myshell` is a simple command-line interpreter that mimics basic Unix shell functionality. This README serves as a guide for users to understand how to operate `myshell` effectively.
 
