@@ -1,8 +1,8 @@
 #LAB 2 - GROUP 1 - CRN: 74026
-##Introduction
+## Introduction
 `myshell` is a simple command-line interpreter that mimics basic Unix shell functionality. This README serves as a guide for users to understand how to operate `myshell` effectively.
 
-##Features
+## Features
 `myshell` supports the following internal commands:
 1. `cd <directory>`: Change the current default directory to `<directory>`. If `<directory>` is not provided, it reports the current directory. An appropriate error is reported if `<directory>` does not exist. This command also updates the `PWD` environment variable.
 2. `clr`: Clear the screen.
@@ -39,7 +39,7 @@
 
    `./myshell batchfile`
 
-#Installation & Usage
+# Installation & Usage
 To install `myshell`, follow these steps:
 1. Clone the repository to your local machine.
    ```bash
@@ -54,17 +54,17 @@ To install `myshell`, follow these steps:
    ```bash
    ./myshell
 
-##I/O Redirection
+## I/O Redirection
 `myshell` supports I/O redirection using the following symbols:
 - `<`: Redirects input from a file.
 - `>`: Redirects output to a file.
 - `>>`: Appends output to a file.
 
-##Exiting `myshell`
+## Exiting `myshell`
 To exit `myshell`, simply type the `quit` command or press `Ctrl + C`.
 
-##Contributers 
+## Contributers 
 
 - Harsh Tamakuwala - 100824220
-- Syed Nasir Hussain Naqvi - 
-- David Hanna - 
+- Syed Nasir Hussain Naqvi - 100809447
+- David Hanna - 100828635
